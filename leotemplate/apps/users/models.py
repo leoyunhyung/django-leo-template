@@ -68,7 +68,6 @@ class User(AbstractUser, Model):
 
     class Meta:
         verbose_name = verbose_name_plural = _('유저')
-        ordering = ['-created']
 
     def set_user_secession(self, reason):
         UserSecession.objects.create(email=self.email, name=self.name, phone=self.phone, reason=reason)

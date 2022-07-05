@@ -93,7 +93,7 @@ class UserCrudViewSet(mixins.ListModelMixin,
                       mixins.DestroyModelMixin,
                       GenericViewSet):
     serializers = {'default': UserSerializer}
-    queryset = User.objects.all()
+    queryset = User.objects.all().order_by('-created')
     filter_backends = (DjangoFilterBackend,)
 
     @swagger_auto_schema(**list_decorator(title=_('유저'), serializer=UserSerializer))
