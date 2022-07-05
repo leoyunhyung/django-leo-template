@@ -10,7 +10,7 @@ from leotemplate.bases.admin import Admin
 @admin.register(User)
 class UserAdmin(Admin, UserAdmin):
     list_display = ('email', 'name', 'phone', 'auth_token', 'is_staff')
-    search_fields = ('email', 'name', 'phone', 'auth_token')
+    search_fields = ('email', 'name', 'phone')
     list_filter = ()
     ordering = ('-created',)
 
