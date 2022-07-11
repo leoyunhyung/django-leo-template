@@ -330,3 +330,4 @@ leotemplate/media/
 .env
 .envs
 .ebextensions/03-branch-environments.config
+.scripts
