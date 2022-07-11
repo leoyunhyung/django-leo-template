@@ -82,4 +82,3 @@ class UserSecession(Model):
 
     class Meta:
         verbose_name = verbose_name_plural = _('탈퇴 유저')
-        ordering = ['-created']
